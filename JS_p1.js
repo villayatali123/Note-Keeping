@@ -1,4 +1,4 @@
-// console.log('Hii there');
+ // console.log('Hii there');
 
 //add User Note to localStorage
 
@@ -26,7 +26,7 @@ addBtn.addEventListener("click", (e) => {
     elem.addTxt=addTxt.value;
     elem.notetitle=noteTitle.value;
     notesObj.push(elem);
-    //console.log(notesObj);
+    // console.log(notesObj);
     localStorage.setItem("notes", JSON.stringify(notesObj));
     addTxt.value = "";
     noteTitle.value="";
@@ -101,9 +101,9 @@ search.addEventListener("input",function(){
     Array.from(noteCards).forEach(function(element){
 
         let cardTxt=element.getElementsByTagName("p")[0].innerText;
-
+        let titleTxt=element.getElementsByTagName("h5")[0].innerText;
         
-        if(cardTxt.includes(inpVal2))
+        if(cardTxt.includes(inpVal2)||titleTxt.includes(inpVal2))
         {
             element.style.display='block';
         }
