@@ -1,4 +1,4 @@
- console.log('Hii there');
+// console.log('Hii there');
 
 //add User Note to localStorage
 
@@ -26,7 +26,7 @@ addBtn.addEventListener("click", (e) => {
     elem.addTxt=addTxt.value;
     elem.notetitle=noteTitle.value;
     notesObj.push(elem);
-    console.log(notesObj);
+    //console.log(notesObj);
     localStorage.setItem("notes", JSON.stringify(notesObj));
     addTxt.value = "";
     noteTitle.value="";
