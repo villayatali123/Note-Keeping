@@ -68,7 +68,7 @@ function showNotes() {
     }
 }
 
-// Function To delete Notes
+// Function To delete Notes using index
 
 function deleteNote(index)
 {
@@ -87,7 +87,6 @@ function deleteNote(index)
 
 
 //function to Search a  note
-
 
 let search=document.getElementById('searchTxt');
 
